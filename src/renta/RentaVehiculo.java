@@ -5,10 +5,6 @@
  */
 package renta;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  *
  * @author LISBER
@@ -21,34 +17,23 @@ public class RentaVehiculo {
     private String nombre;
     private String apellido;
     private String cedula;
-    private int numTelefono;
-    private int anio;
-    private int dia;
-    private int mes;
-    private int aniof;
-    private int diaf;
-    private int mesf;
+    private String numTelefono;
+    private int plazo;
+
     //atributos de la clase
     private double costo;
-    private int plazo;
     private String msj;
 
-    public RentaVehiculo(String nombre, String apellido, String cedula, int numTelefono, int anio, int dia, int mes, int aniof, int diaf, int mesf) {
+    public RentaVehiculo(String nombre, String apellido, String cedula, String numTelefono, int plazo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.numTelefono = numTelefono;
-        this.anio = anio;
-        this.dia = dia;
-        this.mes = mes;
-        this.aniof = aniof;
-        this.diaf = diaf;
-        this.mesf = mesf;
+        this.plazo = plazo;
     }
 
-
     public double CalcularCosto() {
-
+        
         return costo;
 
     }
