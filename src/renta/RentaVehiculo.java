@@ -9,7 +9,7 @@ package renta;
  *
  * @author LISBER
  */
-public class RentaVehiculo {
+public abstract class RentaVehiculo {
 
     /**
      * @param args the command line arguments
@@ -21,8 +21,7 @@ public class RentaVehiculo {
     private int plazo;
 
     //atributos de la clase
-    private double costo;
-    private String msj;
+
 
     public RentaVehiculo(String nombre, String apellido, String cedula, String numTelefono, int plazo) {
         this.nombre = nombre;
@@ -32,10 +31,51 @@ public class RentaVehiculo {
         this.plazo = plazo;
     }
 
-    public double CalcularCosto() {
-        
-        return costo;
-
+    public String getNombre() {
+        return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getNumTelefono() {
+        return numTelefono;
+    }
+
+    public void setNumTelefono(String numTelefono) {
+        this.numTelefono = numTelefono;
+    }
+
+    public int getPlazo() {
+        return plazo;
+    }
+
+    public void setPlazo(int plazo) {
+        this.plazo = plazo;
+    }
+    
+    abstract public double CalcularCosto();
+
+    public double garantia (){
+        return CalcularCosto()/2;
+    }
+    
+    abstract public String descripcion ();
 }
