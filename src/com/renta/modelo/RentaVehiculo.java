@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package renta;
+package com.renta.modelo;
 
 /**
  *
@@ -21,6 +21,9 @@ public abstract class RentaVehiculo {
     private int plazo;
 
     //atributos de la clase
+
+    public RentaVehiculo() {
+    }
 
 
     public RentaVehiculo(String nombre, String apellido, String cedula, String numTelefono, int plazo) {

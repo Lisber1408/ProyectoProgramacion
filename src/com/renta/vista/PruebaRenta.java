@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package renta;
+package com.renta.vista;
 
+import com.renta.controlador.Buseta;
 import java.util.Scanner;
 
 /**
@@ -20,7 +21,10 @@ public class PruebaRenta {
         int opt = 0;
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("RENTA de VEHICULOS");
+        Buseta buseta1 = new Buseta("Chevrolet", "rojo");
+        Buseta buseta2 = new Buseta("Hiunday", "negro");
+
+        System.out.println("RENTA DE VEHICULOS");
         System.out.println("1.Rentar Vehiculo");
         System.out.println("2.Consultar Vehiculos Rentados");
         System.out.println("3.Devoluciones");
@@ -29,7 +33,8 @@ public class PruebaRenta {
 
         switch (opt) {
             case 1:
-                System.out.println("Rentar Vehiculo");
+                //llamar clase menuRentaVehiculo
+
                 break;
             case 2:
                 System.out.println("Consultar Vehiculos Rentados");
@@ -41,7 +46,6 @@ public class PruebaRenta {
                 System.out.println("Informacion");
                 break;
         }
-
     }
 
 }

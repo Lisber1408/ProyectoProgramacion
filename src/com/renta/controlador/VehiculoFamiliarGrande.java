@@ -3,24 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package renta;
+package com.renta.controlador;
+
+import com.renta.modelo.RentaVehiculo;
 
 /**
  *
  * @author LISBER
  */
-public class VehiculoFamiliarMediano extends RentaVehiculo{
+public class VehiculoFamiliarGrande extends RentaVehiculo{
 
-    //cosntructor
-    public VehiculoFamiliarMediano(String nombre, String apellido, 
+    //constructor
+    public VehiculoFamiliarGrande(String nombre, String apellido,
             String cedula, String numTelefono, int plazo) {
         super(nombre, apellido, cedula, numTelefono, plazo);
     }
 
     @Override
     public double CalcularCosto() {
-        return super.getPlazo()*45;
-    }
+        return super.getPlazo()*65;
+     }
+
 
     @Override
     public String descripcion() {
