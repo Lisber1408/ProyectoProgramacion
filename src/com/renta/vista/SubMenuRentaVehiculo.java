@@ -18,6 +18,10 @@ public class SubMenuRentaVehiculo {
         
         int opt=0;
         
+        //Creación del objeto buseta1 y buseta2. Declaración del mismo
+        Buseta buseta1 = new Buseta("Cinascar", "Chery Van", "Gris", 2013);
+        Buseta buseta2 = new Buseta("Hyundai", "h1", "Negro", 2011);
+        
         while (opt < 3){
             System.out.println("*******MENU RENTA VEHICULO*******\n");
             System.out.println("1. Autos Disponibles");
@@ -30,8 +34,9 @@ public class SubMenuRentaVehiculo {
 
             switch (opt) {
                 case 1:
-                    System.out.println("AUTOS DISPONIBLES");
+                    System.out.println("*****AUTOS DISPONIBLES*****");
                     System.out.println("AUTOMOVILES\n");
+                    System.out.println(buseta1.descripcionAutomovil());
                     break;
                 case 2:
                     System.out.println("Registrar Renta: ");

@@ -21,9 +21,6 @@ public class PruebaRenta {
         int opt = 0;
         Scanner entrada = new Scanner(System.in);
 
-        Buseta buseta1 = new Buseta("Chevrolet", "rojo");
-        Buseta buseta2 = new Buseta("Hiunday", "negro");
-
         while (opt != 5){
             System.out.println("RENTA DE VEHICULOS");
             System.out.println("1. Rentar Vehiculo");
@@ -34,7 +31,8 @@ public class PruebaRenta {
             opt = entrada.nextInt();
             switch (opt) {
                 case 1:
-                    //llama el metodo "Renta" de la clase SubMenuRentaVehiculo
+                    //llama el metodo "Renta" de la clase 
+                    //SubMenuRentaVehiculo
                     SubMenuRentaVehiculo.Renta();
                     break;
                 case 2:
