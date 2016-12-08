@@ -12,6 +12,10 @@ import com.renta.modelo.RentaVehiculo;
  * @author LISBER
  */
 public class Camioneta extends RentaVehiculo{
+
+    public Camioneta(String marca, String modelo, String color, int anio) {
+        super(marca, modelo, color, anio);
+    }
  
     public Camioneta(String nombre, String apellido, String cedula,
             String numTelefono, int plazo) {
@@ -25,7 +29,7 @@ public class Camioneta extends RentaVehiculo{
 
 
     @Override
-    public String descripcion() {
+    public String descripcionAutomovil() {
         return  "Camioneta: Tundra \nToyota \nTanque de cobustible 38 galones"
                 + " \nMotor de 4.6L V8 ";
     }

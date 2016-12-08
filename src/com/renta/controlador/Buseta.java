@@ -14,33 +14,13 @@ import com.renta.modelo.RentaVehiculo;
  */
 public class Buseta extends RentaVehiculo {
 
-    String marca;
-    String color;
-
-    public Buseta(String marca, String color) {
-        this.marca = marca;
-        this.color = color;
+    public Buseta(String marca, String modelo, String color, int anio) {
+        super(marca, modelo, color, anio);
     }
 
     public Buseta(String nombre, String apellido, String cedula,
             String numTelefono, int plazo) {
         super(nombre, apellido, cedula, numTelefono, plazo);
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override
@@ -54,8 +34,11 @@ public class Buseta extends RentaVehiculo {
     }
 
     @Override
-    public String descripcion() {
-        return "Descripcion:" + "Marca" + getMarca() + "Color" + getColor();
+    public String descripcionAutomovil() {
+        return "BUSETA\n" + "\tMarca: " +
+                super.getMarca() + "\n\tModelo: " + super.getModelo() 
+                +"\n\tColor: " + super.getColor() + "\n\tAnio: " +
+                super.getAnio();
     }
 
 }

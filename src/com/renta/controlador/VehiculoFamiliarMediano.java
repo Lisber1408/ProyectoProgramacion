@@ -27,7 +27,7 @@ public class VehiculoFamiliarMediano extends RentaVehiculo{
     }
 
     @Override
-    public String descripcion() {
+    public String descripcionAutomovil() {
         return "";
     }
     

@@ -26,7 +26,7 @@ public class VehiculoFamiliarGrande extends RentaVehiculo{
 
 
     @Override
-    public String descripcion() {
+    public String descripcionAutomovil() {
         return "";
     }
     
