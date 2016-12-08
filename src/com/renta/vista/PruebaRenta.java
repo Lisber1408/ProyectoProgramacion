@@ -24,28 +24,33 @@ public class PruebaRenta {
         Buseta buseta1 = new Buseta("Chevrolet", "rojo");
         Buseta buseta2 = new Buseta("Hiunday", "negro");
 
-        System.out.println("RENTA DE VEHICULOS");
-        System.out.println("1.Rentar Vehiculo");
-        System.out.println("2.Consultar Vehiculos Rentados");
-        System.out.println("3.Devoluciones");
-        System.out.println("4.Informacion");
-        opt = entrada.nextInt();
+        while (opt != 5){
+            System.out.println("RENTA DE VEHICULOS");
+            System.out.println("1. Rentar Vehiculo");
+            System.out.println("2. Consultar Vehiculos Rentados");
+            System.out.println("3. Devoluciones");
+            System.out.println("4. Informacion");
+            System.out.println("5. Salir");
+            opt = entrada.nextInt();
+            switch (opt) {
+                case 1:
+                    //llama el metodo "Renta" de la clase SubMenuRentaVehiculo
+                    SubMenuRentaVehiculo.Renta();
+                    break;
+                case 2:
+                    System.out.println("Consultar Vehiculos Rentados");
+                    break;
+                case 3:
+                    System.out.println("Devoluciones de Vehiculos");
+                    break;
+                case 4:
+                    System.out.println("Informacion");
+                    break;
+                default:
+                    break;
+            }
 
-        switch (opt) {
-            case 1:
-                //llamar clase menuRentaVehiculo
-
-                break;
-            case 2:
-                System.out.println("Consultar Vehiculos Rentados");
-                break;
-            case 3:
-                System.out.println("Devoluciones de Vehiculos");
-                break;
-            case 4:
-                System.out.println("Informacion");
-                break;
-        }
+        } 
     }
 
 }

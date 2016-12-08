@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package com.renta.controlador;
-
+//importamos del paquete com.renta.modelo la clase RentaVehiculo
+//que es nuestra superClase
 import com.renta.modelo.RentaVehiculo;
 
 /**
